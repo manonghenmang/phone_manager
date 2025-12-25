@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "org.example.phonemanager.app-merged_res-30:/layout_activity_add_phone.xml.flat",
+        "source": "org.example.phonemanager.app-main-31:/layout/activity_add_phone.xml"
+    },
+    {
+        "merged": "org.example.phonemanager.app-merged_res-30:/layout_activity_phone_list.xml.flat",
+        "source": "org.example.phonemanager.app-main-31:/layout/activity_phone_list.xml"
+    },
+    {
+        "merged": "org.example.phonemanager.app-merged_res-30:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "org.example.phonemanager.app-main-31:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "org.example.phonemanager.app-merged_res-30:/layout_activity_return.xml.flat",
+        "source": "org.example.phonemanager.app-main-31:/layout/activity_return.xml"
+    },
+    {
+        "merged": "org.example.phonemanager.app-merged_res-30:/layout_activity_lend.xml.flat",
+        "source": "org.example.phonemanager.app-main-31:/layout/activity_lend.xml"
+    },
+    {
+        "merged": "org.example.phonemanager.app-merged_res-30:/layout_activity_scan.xml.flat",
+        "source": "org.example.phonemanager.app-main-31:/layout/activity_scan.xml"
+    },
+    {
+        "merged": "org.example.phonemanager.app-merged_res-30:/drawable_search_bar_background.xml.flat",
+        "source": "org.example.phonemanager.app-main-31:/drawable/search_bar_background.xml"
+    },
+    {
+        "merged": "org.example.phonemanager.app-merged_res-30:/layout_phone_list_item.xml.flat",
+        "source": "org.example.phonemanager.app-main-31:/layout/phone_list_item.xml"
+    },
+    {
+        "merged": "org.example.phonemanager.app-merged_res-30:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "org.example.phonemanager.app-main-31:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "org.example.phonemanager.app-merged_res-30:/layout_activity_main.xml.flat",
+        "source": "org.example.phonemanager.app-main-31:/layout/activity_main.xml"
+    },
+    {
+        "merged": "org.example.phonemanager.app-merged_res-30:/drawable_scan_frame.xml.flat",
+        "source": "org.example.phonemanager.app-main-31:/drawable/scan_frame.xml"
+    },
+    {
+        "merged": "org.example.phonemanager.app-merged_res-30:/drawable_ic_search.xml.flat",
+        "source": "org.example.phonemanager.app-main-31:/drawable/ic_search.xml"
+    }
+]

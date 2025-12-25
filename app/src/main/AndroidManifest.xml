@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 应用权限声明 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PhoneManager"
+        tools:targetApi="31">
+        <!-- 主Activity -->
+        <activity
+            android:name=".view.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 扫描Activity -->
+        <activity
+            android:name=".view.ScanActivity"
+            android:exported="false" />
+        <!-- 借出Activity -->
+        <activity
+            android:name=".view.LendActivity"
+            android:exported="false" />
+        <!-- 归还Activity -->
+        <activity
+            android:name=".view.ReturnActivity"
+            android:exported="false" />
+        <!-- 添加手机Activity -->
+        <activity
+            android:name=".view.AddPhoneActivity"
+            android:exported="false" />
+        <!-- 手机列表Activity -->
+        <activity
+            android:name=".view.PhoneListActivity"
+            android:exported="false" />
+        <!-- 编辑手机Activity -->
+        <activity
+            android:name=".view.EditPhoneActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

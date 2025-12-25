@@ -1,0 +1,14 @@
+services:
+  android-builder:
+    build: .
+    volumes:
+      - gradle-cache:/root/.gradle
+      - .:/app
+    devices:
+      - /dev/bus/usb:/dev/bus/usb
+    privileged: true
+    command: gradle assembleDebug
+    working_dir: /app
+
+volumes:
+  gradle-cache:

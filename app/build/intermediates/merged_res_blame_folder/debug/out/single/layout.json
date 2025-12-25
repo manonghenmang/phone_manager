@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "org.example.phonemanager.app-mergeDebugResources-29:/layout/activity_return.xml",
+        "source": "org.example.phonemanager.app-main-32:/layout/activity_return.xml"
+    },
+    {
+        "merged": "org.example.phonemanager.app-mergeDebugResources-29:/layout/activity_lend.xml",
+        "source": "org.example.phonemanager.app-main-32:/layout/activity_lend.xml"
+    },
+    {
+        "merged": "org.example.phonemanager.app-mergeDebugResources-29:/layout/activity_add_phone.xml",
+        "source": "org.example.phonemanager.app-main-32:/layout/activity_add_phone.xml"
+    },
+    {
+        "merged": "org.example.phonemanager.app-mergeDebugResources-29:/layout/activity_phone_list.xml",
+        "source": "org.example.phonemanager.app-main-32:/layout/activity_phone_list.xml"
+    },
+    {
+        "merged": "org.example.phonemanager.app-mergeDebugResources-29:/layout/activity_scan.xml",
+        "source": "org.example.phonemanager.app-main-32:/layout/activity_scan.xml"
+    },
+    {
+        "merged": "org.example.phonemanager.app-mergeDebugResources-29:/layout/activity_main.xml",
+        "source": "org.example.phonemanager.app-main-32:/layout/activity_main.xml"
+    },
+    {
+        "merged": "org.example.phonemanager.app-mergeDebugResources-29:/layout/phone_list_item.xml",
+        "source": "org.example.phonemanager.app-main-32:/layout/phone_list_item.xml"
+    }
+]

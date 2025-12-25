@@ -1,0 +1,182 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.example.phonemanager"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml
+10
+11    <!-- 应用权限声明 -->
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:6:5-65
+12-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:6:22-62
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:7:5-81
+13-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:7:22-78
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:8:5-80
+14-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:8:22-77
+15
+16    <uses-feature android:name="android.hardware.camera" />
+16-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:9:5-60
+16-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:9:19-57
+17    <uses-feature android:name="android.hardware.camera.autofocus" />
+17-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:10:5-70
+17-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:10:19-67
+18    <uses-feature
+18-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Administrator\.gradle\caches\transforms-3\07464b372d4fff2f6f9bf36fc04cc0a2\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:28:5-30:36
+19        android:name="android.hardware.camera.front"
+19-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Administrator\.gradle\caches\transforms-3\07464b372d4fff2f6f9bf36fc04cc0a2\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:29:9-53
+20        android:required="false" />
+20-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Administrator\.gradle\caches\transforms-3\07464b372d4fff2f6f9bf36fc04cc0a2\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:30:9-33
+21    <uses-feature
+21-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Administrator\.gradle\caches\transforms-3\07464b372d4fff2f6f9bf36fc04cc0a2\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:36:5-38:36
+22        android:name="android.hardware.camera.flash"
+22-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Administrator\.gradle\caches\transforms-3\07464b372d4fff2f6f9bf36fc04cc0a2\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:37:9-53
+23        android:required="false" />
+23-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Administrator\.gradle\caches\transforms-3\07464b372d4fff2f6f9bf36fc04cc0a2\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:38:9-33
+24    <uses-feature
+24-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Administrator\.gradle\caches\transforms-3\07464b372d4fff2f6f9bf36fc04cc0a2\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:39:5-41:36
+25        android:name="android.hardware.screen.landscape"
+25-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Administrator\.gradle\caches\transforms-3\07464b372d4fff2f6f9bf36fc04cc0a2\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:40:9-57
+26        android:required="false" />
+26-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Administrator\.gradle\caches\transforms-3\07464b372d4fff2f6f9bf36fc04cc0a2\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:41:9-33
+27    <uses-feature
+27-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Administrator\.gradle\caches\transforms-3\07464b372d4fff2f6f9bf36fc04cc0a2\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:42:5-44:36
+28        android:name="android.hardware.wifi"
+28-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Administrator\.gradle\caches\transforms-3\07464b372d4fff2f6f9bf36fc04cc0a2\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:43:9-45
+29        android:required="false" />
+29-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Administrator\.gradle\caches\transforms-3\07464b372d4fff2f6f9bf36fc04cc0a2\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:44:9-33
+30
+31    <permission
+31-->[androidx.core:core:1.9.0] C:\Users\Administrator\.gradle\caches\transforms-3\6e1cadeb405580b47ec7e1dc9af54fc3\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+32        android:name="org.example.phonemanager.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+32-->[androidx.core:core:1.9.0] C:\Users\Administrator\.gradle\caches\transforms-3\6e1cadeb405580b47ec7e1dc9af54fc3\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+33        android:protectionLevel="signature" />
+33-->[androidx.core:core:1.9.0] C:\Users\Administrator\.gradle\caches\transforms-3\6e1cadeb405580b47ec7e1dc9af54fc3\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+34
+35    <uses-permission android:name="org.example.phonemanager.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+35-->[androidx.core:core:1.9.0] C:\Users\Administrator\.gradle\caches\transforms-3\6e1cadeb405580b47ec7e1dc9af54fc3\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+35-->[androidx.core:core:1.9.0] C:\Users\Administrator\.gradle\caches\transforms-3\6e1cadeb405580b47ec7e1dc9af54fc3\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+36
+37    <application
+37-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:12:5-54:19
+38        android:allowBackup="true"
+38-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:13:9-35
+39        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+39-->[androidx.core:core:1.9.0] C:\Users\Administrator\.gradle\caches\transforms-3\6e1cadeb405580b47ec7e1dc9af54fc3\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+40        android:extractNativeLibs="false"
+41        android:icon="@mipmap/ic_launcher"
+41-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:14:9-43
+42        android:label="@string/app_name"
+42-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:15:9-41
+43        android:roundIcon="@mipmap/ic_launcher_round"
+43-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:16:9-54
+44        android:supportsRtl="true"
+44-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:17:9-35
+45        android:theme="@style/Theme.PhoneManager" >
+45-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:18:9-50
+46
+47        <!-- 主Activity -->
+48        <activity
+48-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:21:9-29:20
+49            android:name="org.example.phonemanager.view.MainActivity"
+49-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:22:13-46
+50            android:exported="true" >
+50-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:23:13-36
+51            <intent-filter>
+51-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:24:13-28:29
+52                <action android:name="android.intent.action.MAIN" />
+52-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:25:17-69
+52-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:25:25-66
+53
+54                <category android:name="android.intent.category.LAUNCHER" />
+54-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:27:17-77
+54-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:27:27-74
+55            </intent-filter>
+56        </activity>
+57        <!-- 扫描Activity -->
+58        <activity
+58-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:31:9-33:40
+59            android:name="org.example.phonemanager.view.ScanActivity"
+59-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:32:13-46
+60            android:exported="false" />
+60-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:33:13-37
+61        <!-- 借出Activity -->
+62        <activity
+62-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:35:9-37:40
+63            android:name="org.example.phonemanager.view.LendActivity"
+63-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:36:13-46
+64            android:exported="false" />
+64-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:37:13-37
+65        <!-- 归还Activity -->
+66        <activity
+66-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:39:9-41:40
+67            android:name="org.example.phonemanager.view.ReturnActivity"
+67-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:40:13-48
+68            android:exported="false" />
+68-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:41:13-37
+69        <!-- 添加手机Activity -->
+70        <activity
+70-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:43:9-45:40
+71            android:name="org.example.phonemanager.view.AddPhoneActivity"
+71-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:44:13-50
+72            android:exported="false" />
+72-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:45:13-37
+73        <!-- 手机列表Activity -->
+74        <activity
+74-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:47:9-49:40
+75            android:name="org.example.phonemanager.view.PhoneListActivity"
+75-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:48:13-51
+76            android:exported="false" />
+76-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:49:13-37
+77        <!-- 编辑手机Activity -->
+78        <activity
+78-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:51:9-53:40
+79            android:name="org.example.phonemanager.view.EditPhoneActivity"
+79-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:52:13-51
+80            android:exported="false" />
+80-->C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:53:13-37
+81        <activity
+81-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Administrator\.gradle\caches\transforms-3\07464b372d4fff2f6f9bf36fc04cc0a2\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:47:9-53:63
+82            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+82-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Administrator\.gradle\caches\transforms-3\07464b372d4fff2f6f9bf36fc04cc0a2\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:48:13-74
+83            android:clearTaskOnLaunch="true"
+83-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Administrator\.gradle\caches\transforms-3\07464b372d4fff2f6f9bf36fc04cc0a2\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:49:13-45
+84            android:screenOrientation="sensorLandscape"
+84-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Administrator\.gradle\caches\transforms-3\07464b372d4fff2f6f9bf36fc04cc0a2\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:50:13-56
+85            android:stateNotNeeded="true"
+85-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Administrator\.gradle\caches\transforms-3\07464b372d4fff2f6f9bf36fc04cc0a2\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:51:13-42
+86            android:theme="@style/zxing_CaptureTheme"
+86-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Administrator\.gradle\caches\transforms-3\07464b372d4fff2f6f9bf36fc04cc0a2\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:52:13-54
+87            android:windowSoftInputMode="stateAlwaysHidden" />
+87-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Administrator\.gradle\caches\transforms-3\07464b372d4fff2f6f9bf36fc04cc0a2\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:53:13-60
+88
+89        <provider
+89-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Administrator\.gradle\caches\transforms-3\033999059ea7ce45b81b7d1e7fc0551e\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+90            android:name="androidx.startup.InitializationProvider"
+90-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Administrator\.gradle\caches\transforms-3\033999059ea7ce45b81b7d1e7fc0551e\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+91            android:authorities="org.example.phonemanager.androidx-startup"
+91-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Administrator\.gradle\caches\transforms-3\033999059ea7ce45b81b7d1e7fc0551e\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+92            android:exported="false" >
+92-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Administrator\.gradle\caches\transforms-3\033999059ea7ce45b81b7d1e7fc0551e\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+93            <meta-data
+93-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Administrator\.gradle\caches\transforms-3\033999059ea7ce45b81b7d1e7fc0551e\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+94                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+94-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Administrator\.gradle\caches\transforms-3\033999059ea7ce45b81b7d1e7fc0551e\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+95                android:value="androidx.startup" />
+95-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Administrator\.gradle\caches\transforms-3\033999059ea7ce45b81b7d1e7fc0551e\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+96            <meta-data
+96-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Administrator\.gradle\caches\transforms-3\73bd95e778e11102c0ed700adeba10f5\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+97                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+97-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Administrator\.gradle\caches\transforms-3\73bd95e778e11102c0ed700adeba10f5\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+98                android:value="androidx.startup" />
+98-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Administrator\.gradle\caches\transforms-3\73bd95e778e11102c0ed700adeba10f5\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+99        </provider>
+100    </application>
+101
+102</manifest>

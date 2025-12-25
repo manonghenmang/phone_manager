@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主题颜色 -->
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#FF4081</color>
+    
+    <!-- 基本颜色 -->
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGray">#9E9E9E</color>
+    <color name="colorLightGray">#F5F5F5</color>
+    <color name="colorDarkGray">#616161</color>
+    
+    <!-- 状态颜色 -->
+    <color name="colorSuccess">#4CAF50</color>
+    <color name="colorError">#F44336</color>
+    <color name="colorWarning">#FFC107</color>
+    <color name="colorInfo">#2196F3</color>
+    
+    <!-- 文本颜色 -->
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorSecondary">#757575</color>
+    <color name="textColorHint">#9E9E9E</color>
+    
+    <!-- 背景颜色 -->
+    <color name="backgroundPrimary">#FFFFFF</color>
+    <color name="backgroundSecondary">#F5F5F5</color>
+    <color name="backgroundCard">#FFFFFF</color>
+    
+    <!-- 边框颜色 -->
+    <color name="borderColor">#E0E0E0</color>
+</resources>

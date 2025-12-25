@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.4.2" type="incidents">
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;添加手机信息&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_add_phone.xml"
+            line="23"
+            column="17"
+            startOffset="919"
+            endLine="23"
+            endColumn="38"
+            endOffset="940"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;手机ID:&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_add_phone.xml"
+            line="35"
+            column="17"
+            startOffset="1442"
+            endLine="35"
+            endColumn="37"
+            endOffset="1462"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                dot="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_add_phone.xml"
+            line="42"
+            column="14"
+            startOffset="1704"
+            endLine="42"
+            endColumn="22"
+            endOffset="1712"/>
+    </incident>
+
+    <incident
+        id="TextFields"
+        severity="warning"
+        message="The view name (`@+id/editTextPhoneId`) suggests this is a phone number, but it does not include &apos;`phone`&apos; in the `inputType`">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_add_phone.xml"
+            line="48"
+            column="17"
+            startOffset="1970"
+            endLine="48"
+            endColumn="41"
+            endOffset="1994"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_add_phone.xml"
+            line="43"
+            column="17"
+            startOffset="1730"
+            endLine="43"
+            endColumn="50"
+            endOffset="1763"
+            message="id defined here"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;拥有者:&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_add_phone.xml"
+            line="57"
+            column="17"
+            startOffset="2373"
+            endLine="57"
+            endColumn="36"
+            endOffset="2392"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                dot="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_add_phone.xml"
+            line="64"
+            column="14"
+            startOffset="2638"
+            endLine="64"
+            endColumn="22"
+            endOffset="2646"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;品牌:&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_add_phone.xml"
+            line="79"
+            column="17"
+            startOffset="3302"
+            endLine="79"
+            endColumn="35"
+            endOffset="3320"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                dot="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_add_phone.xml"
+            line="86"
+            column="14"
+            startOffset="3562"
+            endLine="86"
+            endColumn="22"
+            endOffset="3570"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;型号:&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_add_phone.xml"
+            line="101"
+            column="17"
+            startOffset="4226"
+            endLine="101"
+            endColumn="35"
+            endOffset="4244"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                dot="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_add_phone.xml"
+            line="108"
+            column="14"
+            startOffset="4486"
+            endLine="108"
+            endColumn="22"
+            endOffset="4494"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;取消&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_add_phone.xml"
+            line="135"
+            column="21"
+            startOffset="5762"
+            endLine="135"
+            endColumn="38"
+            endOffset="5779"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;添加&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_add_phone.xml"
+            line="146"
+            column="21"
+            startOffset="6289"
+            endLine="146"
+            endColumn="38"
+            endOffset="6306"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;手机信息&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_lend.xml"
+            line="41"
+            column="25"
+            startOffset="1715"
+            endLine="41"
+            endColumn="44"
+            endOffset="1734"/>
+    </incident>
+
+    <incident
+        id="InefficientWeight"
+        severity="warning"
+        message="Use a `layout_width` of `0dp` instead of `wrap_content` for better performance">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_lend.xml"
+            line="53"
+            column="29"
+            startOffset="2308"
+            endLine="53"
+            endColumn="64"
+            endOffset="2343"/>
+    </incident>
+
+    <incident
+        id="InefficientWeight"
+        severity="warning"
+        message="Use a `layout_width` of `0dp` instead of `wrap_content` for better performance">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_lend.xml"
+            line="75"
+            column="29"
+            startOffset="3499"
+            endLine="75"
+            endColumn="64"
+            endOffset="3534"/>
+    </incident>
+
+    <incident
+        id="InefficientWeight"
+        severity="warning"
+        message="Use a `layout_width` of `0dp` instead of `wrap_content` for better performance">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_lend.xml"
+            line="96"
+            column="29"
+            startOffset="4631"
+            endLine="96"
+            endColumn="64"
+            endOffset="4666"/>
+    </incident>
+
+    <incident
+        id="InefficientWeight"
+        severity="warning"
+        message="Use a `layout_width` of `0dp` instead of `wrap_content` for better performance">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_lend.xml"
+            line="117"
+            column="29"
+            startOffset="5763"
+            endLine="117"
+            endColumn="64"
+            endOffset="5798"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;借出信息&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_lend.xml"
+            line="154"
+            column="25"
+            startOffset="7447"
+            endLine="154"
+            endColumn="44"
+            endOffset="7466"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;添加手机&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="74"
+            column="21"
+            startOffset="3232"
+            endLine="74"
+            endColumn="40"
+            endOffset="3251"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;浏览手机&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="86"
+            column="21"
+            startOffset="3808"
+            endLine="86"
+            endColumn="40"
+            endOffset="3827"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;使用说明：点击相应按钮开始借还操作，系统将引导您完成扫描二维码和信息输入流程。&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="99"
+            column="13"
+            startOffset="4323"
+            endLine="99"
+            endColumn="67"
+            endOffset="4377"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;手机信息列表&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_phone_list.xml"
+            line="20"
+            column="13"
+            startOffset="722"
+            endLine="20"
+            endColumn="34"
+            endOffset="743"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-attribute
+            description="Set contentDescription"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="contentDescription"
+            value="TODO"
+            dot="4"
+            mark="0"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_phone_list.xml"
+            line="34"
+            column="14"
+            startOffset="1247"
+            endLine="34"
+            endColumn="23"
+            endOffset="1256"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                dot="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_phone_list.xml"
+            line="42"
+            column="14"
+            startOffset="1571"
+            endLine="42"
+            endColumn="22"
+            endOffset="1579"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;搜索手机编号、拥有者、品牌、型号&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_phone_list.xml"
+            line="47"
+            column="17"
+            startOffset="1788"
+            endLine="47"
+            endColumn="48"
+            endOffset="1819"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;搜索&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_phone_list.xml"
+            line="58"
+            column="17"
+            startOffset="2243"
+            endLine="58"
+            endColumn="34"
+            endOffset="2260"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;手机信息&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_return.xml"
+            line="41"
+            column="25"
+            startOffset="1717"
+            endLine="41"
+            endColumn="44"
+            endOffset="1736"/>
+    </incident>
+
+    <incident
+        id="InefficientWeight"
+        severity="warning"
+        message="Use a `layout_width` of `0dp` instead of `wrap_content` for better performance">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_return.xml"
+            line="53"
+            column="29"
+            startOffset="2310"
+            endLine="53"
+            endColumn="64"
+            endOffset="2345"/>
+    </incident>
+
+    <incident
+        id="InefficientWeight"
+        severity="warning"
+        message="Use a `layout_width` of `0dp` instead of `wrap_content` for better performance">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_return.xml"
+            line="75"
+            column="29"
+            startOffset="3501"
+            endLine="75"
+            endColumn="64"
+            endOffset="3536"/>
+    </incident>
+
+    <incident
+        id="InefficientWeight"
+        severity="warning"
+        message="Use a `layout_width` of `0dp` instead of `wrap_content` for better performance">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_return.xml"
+            line="96"
+            column="29"
+            startOffset="4633"
+            endLine="96"
+            endColumn="64"
+            endOffset="4668"/>
+    </incident>
+
+    <incident
+        id="InefficientWeight"
+        severity="warning"
+        message="Use a `layout_width` of `0dp` instead of `wrap_content` for better performance">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_return.xml"
+            line="117"
+            column="29"
+            startOffset="5765"
+            endLine="117"
+            endColumn="64"
+            endOffset="5800"/>
+    </incident>
+
+    <incident
+        id="InefficientWeight"
+        severity="warning"
+        message="Use a `layout_width` of `0dp` instead of `wrap_content` for better performance">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_return.xml"
+            line="139"
+            column="29"
+            startOffset="6953"
+            endLine="139"
+            endColumn="64"
+            endOffset="6988"/>
+    </incident>
+
+    <incident
+        id="InefficientWeight"
+        severity="warning"
+        message="Use a `layout_width` of `0dp` instead of `wrap_content` for better performance">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_return.xml"
+            line="159"
+            column="29"
+            startOffset="8032"
+            endLine="159"
+            endColumn="64"
+            endOffset="8067"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;归还信息&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_return.xml"
+            line="195"
+            column="25"
+            startOffset="9667"
+            endLine="195"
+            endColumn="44"
+            endOffset="9686"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/org/example/phonemanager/view/PhoneListActivity.java"
+            line="87"
+            column="128"
+            startOffset="2954"
+            endLine="87"
+            endColumn="139"
+            endOffset="2965"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/org/example/phonemanager/view/PhoneListActivity.java"
+            line="87"
+            column="162"
+            startOffset="2988"
+            endLine="87"
+            endColumn="173"
+            endOffset="2999"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/org/example/phonemanager/view/PhoneListActivity.java"
+            line="108"
+            column="45"
+            startOffset="3537"
+            endLine="108"
+            endColumn="56"
+            endOffset="3548"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/org/example/phonemanager/view/PhoneListActivity.java"
+            line="114"
+            column="66"
+            startOffset="3756"
+            endLine="114"
+            endColumn="77"
+            endOffset="3767"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/org/example/phonemanager/view/PhoneListActivity.java"
+            line="116"
+            column="69"
+            startOffset="3899"
+            endLine="116"
+            endColumn="80"
+            endOffset="3910"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/org/example/phonemanager/view/PhoneListActivity.java"
+            line="118"
+            column="69"
+            startOffset="4042"
+            endLine="118"
+            endColumn="80"
+            endOffset="4053"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/org/example/phonemanager/view/PhoneListActivity.java"
+            line="120"
+            column="69"
+            startOffset="4185"
+            endLine="120"
+            endColumn="80"
+            endOffset="4196"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/org/example/phonemanager/view/PhoneListAdapter.java"
+            line="77"
+            column="44"
+            startOffset="2556"
+            endLine="77"
+            endColumn="73"
+            endOffset="2585"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/org/example/phonemanager/view/PhoneListAdapter.java"
+            line="78"
+            column="42"
+            startOffset="2629"
+            endLine="78"
+            endColumn="101"
+            endOffset="2688"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/org/example/phonemanager/view/PhoneListAdapter.java"
+            line="79"
+            column="42"
+            startOffset="2732"
+            endLine="79"
+            endColumn="101"
+            endOffset="2791"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/org/example/phonemanager/view/PhoneListAdapter.java"
+            line="80"
+            column="42"
+            startOffset="2835"
+            endLine="80"
+            endColumn="102"
+            endOffset="2895"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/org/example/phonemanager/view/PhoneListAdapter.java"
+            line="81"
+            column="45"
+            startOffset="2942"
+            endLine="81"
+            endColumn="111"
+            endOffset="3008"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/org/example/phonemanager/view/PhoneListAdapter.java"
+            line="82"
+            column="49"
+            startOffset="3059"
+            endLine="82"
+            endColumn="123"
+            endOffset="3133"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/org/example/phonemanager/view/PhoneListAdapter.java"
+            line="83"
+            column="43"
+            startOffset="3178"
+            endLine="83"
+            endColumn="104"
+            endOffset="3239"/>
+    </incident>
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 36"
+            oldString="33"
+            replacement="36"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="19"
+            column="9"
+            startOffset="407"
+            endLine="19"
+            endColumn="21"
+            endOffset="419"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.7.1">
+        <fix-replace
+            description="Change to 1.7.1"
+            family="Update versions"
+            oldString="1.6.1"
+            replacement="1.7.1"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="38"
+            column="20"
+            startOffset="846"
+            endLine="38"
+            endColumn="56"
+            endOffset="882"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.android.material:material than 1.8.0 is available: 1.13.0">
+        <fix-replace
+            description="Change to 1.13.0"
+            family="Update versions"
+            oldString="1.8.0"
+            replacement="1.13.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="39"
+            column="20"
+            startOffset="903"
+            endLine="39"
+            endColumn="64"
+            endOffset="947"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.1">
+        <fix-replace
+            description="Change to 2.2.1"
+            family="Update versions"
+            oldString="2.1.4"
+            replacement="2.2.1"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="40"
+            column="20"
+            startOffset="968"
+            endLine="40"
+            endColumn="70"
+            endOffset="1018"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.3.0">
+        <fix-replace
+            description="Change to 1.3.0"
+            family="Update versions"
+            oldString="1.1.5"
+            replacement="1.3.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="47"
+            column="31"
+            startOffset="1246"
+            endLine="47"
+            endColumn="62"
+            endOffset="1277"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.7.0">
+        <fix-replace
+            description="Change to 3.7.0"
+            family="Update versions"
+            oldString="3.5.1"
+            replacement="3.7.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="48"
+            column="31"
+            startOffset="1309"
+            endLine="48"
+            endColumn="75"
+            endOffset="1353"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/backgroundPrimary` with a theme that also paints a background (inferred theme is `@style/Theme.PhoneManager`)">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_lend.xml"
+            line="7"
+            column="5"
+            startOffset="347"
+            endLine="7"
+            endColumn="50"
+            endOffset="392"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/backgroundPrimary` with a theme that also paints a background (inferred theme is `@style/Theme.PhoneManager`)">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="7"
+            column="5"
+            startOffset="347"
+            endLine="7"
+            endColumn="50"
+            endOffset="392"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/colorWhite` with a theme that also paints a background (inferred theme is `@style/Theme.PhoneManager`)">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_phone_list.xml"
+            line="7"
+            column="5"
+            startOffset="294"
+            endLine="7"
+            endColumn="43"
+            endOffset="332"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/backgroundPrimary` with a theme that also paints a background (inferred theme is `@style/Theme.PhoneManager`)">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_return.xml"
+            line="7"
+            column="5"
+            startOffset="347"
+            endLine="7"
+            endColumn="50"
+            endOffset="392"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/colorBlack` with a theme that also paints a background (inferred theme is `@style/Theme.PhoneManager`)">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_scan.xml"
+            line="7"
+            column="5"
+            startOffset="347"
+            endLine="7"
+            endColumn="43"
+            endOffset="385"/>
+    </incident>
+
+</incidents>

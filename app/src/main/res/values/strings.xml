@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">手机借还管理系统</string>
+    <string name="title_main">手机借还管理</string>
+    <string name="title_scan">扫描二维码</string>
+    <string name="title_lend">借出手机</string>
+    <string name="title_return">归还手机</string>
+    
+    <string name="btn_lend">借出手机</string>
+    <string name="btn_return">归还手机</string>
+    <string name="btn_scan">扫描二维码</string>
+    <string name="btn_confirm">确认</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_back">返回</string>
+    
+    <string name="text_phone_id">手机ID:</string>
+    <string name="text_brand">品牌:</string>
+    <string name="text_model">型号:</string>
+    <string name="text_status">状态:</string>
+    <string name="text_borrower">借用人:</string>
+    <string name="text_lender">出借人:</string>
+    <string name="text_lend_date">借出日期:</string>
+    <string name="text_return_date">归还日期:</string>
+    <string name="text_return_person">归还人:</string>
+    
+    <string name="hint_borrower">请输入借用人姓名</string>
+    <string name="hint_lender">请输入出借人姓名</string>
+    <string name="hint_return_person">请输入归还人姓名</string>
+    
+    <string name="status_available">可用</string>
+    <string name="status_lent">已借出</string>
+    
+    <string name="msg_scan_success">扫描成功</string>
+    <string name="msg_scan_failed">扫描失败，请重试</string>
+    <string name="msg_lend_success">借出成功</string>
+    <string name="msg_lend_failed">借出失败，请检查手机状态</string>
+    <string name="msg_return_success">归还成功</string>
+    <string name="msg_return_failed">归还失败，请检查手机状态</string>
+    <string name="msg_phone_not_found">未找到该手机信息</string>
+    <string name="msg_input_required">请输入必要信息</string>
+    
+    <string name="permission_camera_rationale">需要相机权限才能扫描二维码</string>
+    <string name="permission_storage_rationale">需要存储权限才能保存数据</string>
+    <string name="permission_denied">权限被拒绝，功能无法使用</string>
+</resources>

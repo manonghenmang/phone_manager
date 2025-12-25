@@ -1,0 +1,616 @@
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\AndroidManifest.xml:7: Warning: WRITE_EXTERNAL_STORAGE no longer provides write access when targeting Android 10+ [ScopedStorage]
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ScopedStorage":
+   Scoped storage is enforced on Android 10+ (or Android 11+ if using
+   requestLegacyExternalStorage). In particular, WRITE_EXTERNAL_STORAGE will
+   no longer provide write access to all files; it will provide the equivalent
+   of READ_EXTERNAL_STORAGE instead.
+
+   The MANAGE_EXTERNAL_STORAGE permission can be used to manage all files, but
+   it is rarely necessary and most apps on Google Play are not allowed to use
+   it. Most apps should instead migrate to use scoped storage. To modify or
+   delete files, apps should request write access from the user as described
+   at https://goo.gle/android-mediastore-createwriterequest.
+
+   To learn more, read these resources: Play policy:
+   https://goo.gle/policy-storage-help Allowable use cases:
+   https://goo.gle/policy-storage-usecases
+
+   https://goo.gle/android-storage-usecases
+
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\java\org\example\phonemanager\view\PhoneListActivity.java:87: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+                Log.d("PhoneListActivity", "Phone ID: " + phone.getPhoneId() + ", Contains search text: " + phone.getPhoneId().toLowerCase().contains(searchText.toLowerCase()));
+                                                                                                                               ~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\java\org\example\phonemanager\view\PhoneListActivity.java:87: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+                Log.d("PhoneListActivity", "Phone ID: " + phone.getPhoneId() + ", Contains search text: " + phone.getPhoneId().toLowerCase().contains(searchText.toLowerCase()));
+                                                                                                                                                                 ~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\java\org\example\phonemanager\view\PhoneListActivity.java:108: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+        String lowerCaseSearch = searchText.toLowerCase();
+                                            ~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\java\org\example\phonemanager\view\PhoneListActivity.java:114: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+            if (phone.getPhoneId() != null && phone.getPhoneId().toLowerCase().contains(lowerCaseSearch)) {
+                                                                 ~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\java\org\example\phonemanager\view\PhoneListActivity.java:116: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+            } else if (phone.getOwner() != null && phone.getOwner().toLowerCase().contains(lowerCaseSearch)) {
+                                                                    ~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\java\org\example\phonemanager\view\PhoneListActivity.java:118: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+            } else if (phone.getBrand() != null && phone.getBrand().toLowerCase().contains(lowerCaseSearch)) {
+                                                                    ~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\java\org\example\phonemanager\view\PhoneListActivity.java:120: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+            } else if (phone.getModel() != null && phone.getModel().toLowerCase().contains(lowerCaseSearch)) {
+                                                                    ~~~~~~~~~~~
+
+   Explanation for issues of type "DefaultLocale":
+   Calling String#toLowerCase() or #toUpperCase() without specifying an
+   explicit locale is a common source of bugs. The reason for that is that
+   those methods will use the current locale on the user's device, and even
+   though the code appears to work correctly when you are developing the app,
+   it will fail in some locales. For example, in the Turkish locale, the
+   uppercase replacement for i is not I.
+
+   If you want the methods to just perform ASCII replacement, for example to
+   convert an enum name, call String#toUpperCase(Locale.US) instead. If you
+   really want to use the current locale, call
+   String#toUpperCase(Locale.getDefault()) instead.
+
+   https://developer.android.com/reference/java/util/Locale.html#default_locale
+
+C:\Users\Administrator\Desktop\python\phone_manager\app\build.gradle:19: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
+        targetSdk 33
+        ~~~~~~~~~~~~
+
+   Explanation for issues of type "OldTargetApi":
+   When your application runs on a version of Android that is more recent than
+   your targetSdkVersion specifies that it has been tested with, various
+   compatibility modes kick in. This ensures that your application continues
+   to work, but it may look out of place. For example, if the targetSdkVersion
+   is less than 14, your app may get an option button in the UI.
+
+   To fix this issue, set the targetSdkVersion to the highest available value.
+   Then test your app to make sure everything works correctly. You may want to
+   consult the compatibility notes to see what changes apply to each version
+   you are adding support for:
+   https://developer.android.com/reference/android/os/Build.VERSION_CODES.html
+   as well as follow this guide:
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.
+   html
+
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.html
+
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_lend.xml:43: Warning: Attribute fontWeight is only used in API level 26 and higher (current min is 24) [UnusedAttribute]
+                        android:fontWeight="500"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_lend.xml:66: Warning: Attribute fontWeight is only used in API level 26 and higher (current min is 24) [UnusedAttribute]
+                            android:fontWeight="500" />
+                            ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_lend.xml:130: Warning: Attribute fontWeight is only used in API level 26 and higher (current min is 24) [UnusedAttribute]
+                            android:fontWeight="500" />
+                            ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_lend.xml:156: Warning: Attribute fontWeight is only used in API level 26 and higher (current min is 24) [UnusedAttribute]
+                        android:fontWeight="500"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_lend.xml:206: Warning: Attribute fontWeight is only used in API level 26 and higher (current min is 24) [UnusedAttribute]
+                    android:fontWeight="500"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_lend.xml:217: Warning: Attribute fontWeight is only used in API level 26 and higher (current min is 24) [UnusedAttribute]
+                    android:fontWeight="500"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_main.xml:16: Warning: Attribute fontWeight is only used in API level 26 and higher (current min is 24) [UnusedAttribute]
+        android:fontWeight="700"
+        ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_main.xml:52: Warning: Attribute fontWeight is only used in API level 26 and higher (current min is 24) [UnusedAttribute]
+                    android:fontWeight="500"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_main.xml:64: Warning: Attribute fontWeight is only used in API level 26 and higher (current min is 24) [UnusedAttribute]
+                    android:fontWeight="500"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_main.xml:76: Warning: Attribute fontWeight is only used in API level 26 and higher (current min is 24) [UnusedAttribute]
+                    android:fontWeight="500"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_main.xml:88: Warning: Attribute fontWeight is only used in API level 26 and higher (current min is 24) [UnusedAttribute]
+                    android:fontWeight="500"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_return.xml:43: Warning: Attribute fontWeight is only used in API level 26 and higher (current min is 24) [UnusedAttribute]
+                        android:fontWeight="500"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_return.xml:66: Warning: Attribute fontWeight is only used in API level 26 and higher (current min is 24) [UnusedAttribute]
+                            android:fontWeight="500" />
+                            ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_return.xml:130: Warning: Attribute fontWeight is only used in API level 26 and higher (current min is 24) [UnusedAttribute]
+                            android:fontWeight="500" />
+                            ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_return.xml:197: Warning: Attribute fontWeight is only used in API level 26 and higher (current min is 24) [UnusedAttribute]
+                        android:fontWeight="500"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_return.xml:232: Warning: Attribute fontWeight is only used in API level 26 and higher (current min is 24) [UnusedAttribute]
+                    android:fontWeight="500"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_return.xml:243: Warning: Attribute fontWeight is only used in API level 26 and higher (current min is 24) [UnusedAttribute]
+                    android:fontWeight="500"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_scan.xml:50: Warning: Attribute fontWeight is only used in API level 26 and higher (current min is 24) [UnusedAttribute]
+        android:fontWeight="500"
+        ~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedAttribute":
+   This check finds attributes set in XML files that were introduced in a
+   version newer than the oldest version targeted by your application (with
+   the minSdkVersion attribute).
+
+   This is not an error; the application will simply ignore the attribute.
+   However, if the attribute is important to the appearance or functionality
+   of your application, you should consider finding an alternative way to
+   achieve the same result with only available attributes, and then you can
+   optionally create a copy of the layout in a layout-vNN folder which will be
+   used on API NN or higher where you can take advantage of the newer
+   attribute.
+
+   Note: This check does not only apply to attributes. For example, some tags
+   can be unused too, such as the new <tag> element in layouts introduced in
+   API 21.
+
+C:\Users\Administrator\Desktop\python\phone_manager\app\build.gradle:38: Warning: A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.7.1 [GradleDependency]
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\build.gradle:39: Warning: A newer version of com.google.android.material:material than 1.8.0 is available: 1.13.0 [GradleDependency]
+    implementation 'com.google.android.material:material:1.8.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\build.gradle:40: Warning: A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.1 [GradleDependency]
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\build.gradle:47: Warning: A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.3.0 [GradleDependency]
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\build.gradle:48: Warning: A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.7.0 [GradleDependency]
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\styles.xml:13: Warning: Unnecessary; SDK_INT is always >= 21 [ObsoleteSdkInt]
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+                                            ~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ObsoleteSdkInt":
+   This check flags version checks that are not necessary, because the
+   minSdkVersion (or surrounding known API level) is already at least as high
+   as the version checked for.
+
+   Similarly, it also looks for resources in -vNN folders, such as values-v14
+   where the version qualifier is less than or equal to the minSdkVersion,
+   where the contents should be merged into the best folder.
+
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_lend.xml:53: Warning: Use a layout_width of 0dp instead of wrap_content for better performance [InefficientWeight]
+                            android:layout_width="wrap_content"
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_lend.xml:75: Warning: Use a layout_width of 0dp instead of wrap_content for better performance [InefficientWeight]
+                            android:layout_width="wrap_content"
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_lend.xml:96: Warning: Use a layout_width of 0dp instead of wrap_content for better performance [InefficientWeight]
+                            android:layout_width="wrap_content"
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_lend.xml:117: Warning: Use a layout_width of 0dp instead of wrap_content for better performance [InefficientWeight]
+                            android:layout_width="wrap_content"
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_return.xml:53: Warning: Use a layout_width of 0dp instead of wrap_content for better performance [InefficientWeight]
+                            android:layout_width="wrap_content"
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_return.xml:75: Warning: Use a layout_width of 0dp instead of wrap_content for better performance [InefficientWeight]
+                            android:layout_width="wrap_content"
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_return.xml:96: Warning: Use a layout_width of 0dp instead of wrap_content for better performance [InefficientWeight]
+                            android:layout_width="wrap_content"
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_return.xml:117: Warning: Use a layout_width of 0dp instead of wrap_content for better performance [InefficientWeight]
+                            android:layout_width="wrap_content"
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_return.xml:139: Warning: Use a layout_width of 0dp instead of wrap_content for better performance [InefficientWeight]
+                            android:layout_width="wrap_content"
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_return.xml:159: Warning: Use a layout_width of 0dp instead of wrap_content for better performance [InefficientWeight]
+                            android:layout_width="wrap_content"
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "InefficientWeight":
+   When only a single widget in a LinearLayout defines a weight, it is more
+   efficient to assign a width/height of 0dp to it since it will absorb all
+   the remaining space anyway. With a declared width/height of 0dp it does not
+   have to measure its own size first.
+
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_lend.xml:7: Warning: Possible overdraw: Root element paints background @color/backgroundPrimary with a theme that also paints a background (inferred theme is @style/Theme.PhoneManager) [Overdraw]
+    android:background="@color/backgroundPrimary"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_main.xml:7: Warning: Possible overdraw: Root element paints background @color/backgroundPrimary with a theme that also paints a background (inferred theme is @style/Theme.PhoneManager) [Overdraw]
+    android:background="@color/backgroundPrimary"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_phone_list.xml:7: Warning: Possible overdraw: Root element paints background @color/colorWhite with a theme that also paints a background (inferred theme is @style/Theme.PhoneManager) [Overdraw]
+    android:background="@color/colorWhite">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_return.xml:7: Warning: Possible overdraw: Root element paints background @color/backgroundPrimary with a theme that also paints a background (inferred theme is @style/Theme.PhoneManager) [Overdraw]
+    android:background="@color/backgroundPrimary"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_scan.xml:7: Warning: Possible overdraw: Root element paints background @color/colorBlack with a theme that also paints a background (inferred theme is @style/Theme.PhoneManager) [Overdraw]
+    android:background="@color/colorBlack"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "Overdraw":
+   If you set a background drawable on a root view, then you should use a
+   custom theme where the theme background is null. Otherwise, the theme
+   background will be painted first, only to have your custom background
+   completely cover it; this is called "overdraw".
+
+   NOTE: This detector relies on figuring out which layouts are associated
+   with which activities based on scanning the Java code, and it's currently
+   doing that using an inexact pattern matching algorithm. Therefore, it can
+   incorrectly conclude which activity the layout is associated with and then
+   wrongly complain that a background-theme is hidden.
+
+   If you want your custom background on multiple pages, then you should
+   consider making a custom theme with your custom background and just using
+   that theme instead of a root element background.
+
+   Of course it's possible that your custom drawable is translucent and you
+   want it to be mixed with the background. However, you will get better
+   performance if you pre-mix the background with your drawable and use that
+   resulting image or color as a custom theme background instead.
+
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\colors.xml:13: Warning: The resource R.color.colorDarkGray appears to be unused [UnusedResources]
+    <color name="colorDarkGray">#616161</color>
+           ~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\colors.xml:17: Warning: The resource R.color.colorError appears to be unused [UnusedResources]
+    <color name="colorError">#F44336</color>
+           ~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\colors.xml:18: Warning: The resource R.color.colorWarning appears to be unused [UnusedResources]
+    <color name="colorWarning">#FFC107</color>
+           ~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\colors.xml:24: Warning: The resource R.color.textColorHint appears to be unused [UnusedResources]
+    <color name="textColorHint">#9E9E9E</color>
+           ~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\colors.xml:28: Warning: The resource R.color.backgroundSecondary appears to be unused [UnusedResources]
+    <color name="backgroundSecondary">#F5F5F5</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\colors.xml:29: Warning: The resource R.color.backgroundCard appears to be unused [UnusedResources]
+    <color name="backgroundCard">#FFFFFF</color>
+           ~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\colors.xml:32: Warning: The resource R.color.borderColor appears to be unused [UnusedResources]
+    <color name="borderColor">#E0E0E0</color>
+           ~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\strings.xml:5: Warning: The resource R.string.title_lend appears to be unused [UnusedResources]
+    <string name="title_lend">借出手机</string>
+            ~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\strings.xml:6: Warning: The resource R.string.title_return appears to be unused [UnusedResources]
+    <string name="title_return">归还手机</string>
+            ~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\strings.xml:10: Warning: The resource R.string.btn_scan appears to be unused [UnusedResources]
+    <string name="btn_scan">扫描二维码</string>
+            ~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\strings.xml:13: Warning: The resource R.string.btn_back appears to be unused [UnusedResources]
+    <string name="btn_back">返回</string>
+            ~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\strings.xml:20: Warning: The resource R.string.text_lender appears to be unused [UnusedResources]
+    <string name="text_lender">出借人:</string>
+            ~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\strings.xml:22: Warning: The resource R.string.text_return_date appears to be unused [UnusedResources]
+    <string name="text_return_date">归还日期:</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\strings.xml:23: Warning: The resource R.string.text_return_person appears to be unused [UnusedResources]
+    <string name="text_return_person">归还人:</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\strings.xml:29: Warning: The resource R.string.status_available appears to be unused [UnusedResources]
+    <string name="status_available">可用</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\strings.xml:30: Warning: The resource R.string.status_lent appears to be unused [UnusedResources]
+    <string name="status_lent">已借出</string>
+            ~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\strings.xml:32: Warning: The resource R.string.msg_scan_success appears to be unused [UnusedResources]
+    <string name="msg_scan_success">扫描成功</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\strings.xml:33: Warning: The resource R.string.msg_scan_failed appears to be unused [UnusedResources]
+    <string name="msg_scan_failed">扫描失败，请重试</string>
+            ~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\strings.xml:34: Warning: The resource R.string.msg_lend_success appears to be unused [UnusedResources]
+    <string name="msg_lend_success">借出成功</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\strings.xml:35: Warning: The resource R.string.msg_lend_failed appears to be unused [UnusedResources]
+    <string name="msg_lend_failed">借出失败，请检查手机状态</string>
+            ~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\strings.xml:36: Warning: The resource R.string.msg_return_success appears to be unused [UnusedResources]
+    <string name="msg_return_success">归还成功</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\strings.xml:37: Warning: The resource R.string.msg_return_failed appears to be unused [UnusedResources]
+    <string name="msg_return_failed">归还失败，请检查手机状态</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\strings.xml:38: Warning: The resource R.string.msg_phone_not_found appears to be unused [UnusedResources]
+    <string name="msg_phone_not_found">未找到该手机信息</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\strings.xml:39: Warning: The resource R.string.msg_input_required appears to be unused [UnusedResources]
+    <string name="msg_input_required">请输入必要信息</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\strings.xml:41: Warning: The resource R.string.permission_camera_rationale appears to be unused [UnusedResources]
+    <string name="permission_camera_rationale">需要相机权限才能扫描二维码</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\strings.xml:42: Warning: The resource R.string.permission_storage_rationale appears to be unused [UnusedResources]
+    <string name="permission_storage_rationale">需要存储权限才能保存数据</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\strings.xml:43: Warning: The resource R.string.permission_denied appears to be unused [UnusedResources]
+    <string name="permission_denied">权限被拒绝，功能无法使用</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\styles.xml:23: Warning: The resource R.style.Theme_PhoneManager_NoActionBar appears to be unused [UnusedResources]
+    <style name="Theme.PhoneManager.NoActionBar">
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\styles.xml:29: Warning: The resource R.style.CardStyle appears to be unused [UnusedResources]
+    <style name="CardStyle">
+           ~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\styles.xml:38: Warning: The resource R.style.ButtonStyle appears to be unused [UnusedResources]
+    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button">
+           ~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\styles.xml:49: Warning: The resource R.style.EditTextStyle appears to be unused [UnusedResources]
+    <style name="EditTextStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+           ~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\styles.xml:61: Warning: The resource R.style.TextStyle appears to be unused [UnusedResources]
+    <style name="TextStyle">
+           ~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\styles.xml:66: Warning: The resource R.style.TextStyle_Title appears to be unused [UnusedResources]
+    <style name="TextStyle.Title">
+           ~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\styles.xml:73: Warning: The resource R.style.TextStyle_Subtitle appears to be unused [UnusedResources]
+    <style name="TextStyle.Subtitle">
+           ~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\styles.xml:80: Warning: The resource R.style.TextStyle_Normal appears to be unused [UnusedResources]
+    <style name="TextStyle.Normal">
+           ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\styles.xml:86: Warning: The resource R.style.TextStyle_Label appears to be unused [UnusedResources]
+    <style name="TextStyle.Label">
+           ~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\values\styles.xml:93: Warning: The resource R.style.TextStyle_Value appears to be unused [UnusedResources]
+    <style name="TextStyle.Value">
+           ~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_add_phone.xml:48: Warning: The view name (@+id/editTextPhoneId) suggests this is a phone number, but it does not include 'phone' in the inputType [TextFields]
+                android:inputType="text"
+                ~~~~~~~~~~~~~~~~~~~~~~~~
+    C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_add_phone.xml:43: id defined here
+
+   Explanation for issues of type "TextFields":
+   Providing an inputType attribute on a text field improves usability because
+   depending on the data to be input, optimized keyboards can be shown to the
+   user (such as just digits and parentheses for a phone number). 
+
+   The lint detector also looks at the id of the view, and if the id offers a
+   hint of the purpose of the field (for example, the id contains the phrase
+   phone or email), then lint will also ensure that the inputType contains the
+   corresponding type attributes.
+
+   If you really want to keep the text field generic, you can suppress this
+   warning by setting inputType="text".
+
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_add_phone.xml:42: Warning: Missing autofillHints attribute [Autofill]
+            <EditText
+             ~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_add_phone.xml:64: Warning: Missing autofillHints attribute [Autofill]
+            <EditText
+             ~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_add_phone.xml:86: Warning: Missing autofillHints attribute [Autofill]
+            <EditText
+             ~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_add_phone.xml:108: Warning: Missing autofillHints attribute [Autofill]
+            <EditText
+             ~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_phone_list.xml:42: Warning: Missing autofillHints attribute [Autofill]
+            <EditText
+             ~~~~~~~~
+
+   Explanation for issues of type "Autofill":
+   Specify an autofillHints attribute when targeting SDK version 26 or higher
+   or explicitly specify that the view is not important for autofill. Your app
+   can help an autofill service classify the data correctly by providing the
+   meaning of each view that could be autofillable, such as views representing
+   usernames, passwords, credit card fields, email addresses, etc.
+
+   The hints can have any value, but it is recommended to use predefined
+   values like 'username' for a username or 'creditCardNumber' for a credit
+   card number. For a list of all predefined autofill hint constants, see the
+   AUTOFILL_HINT_ constants in the View reference at
+   https://developer.android.com/reference/android/view/View.html.
+
+   You can mark a view unimportant for autofill by specifying an
+   importantForAutofill attribute on that view or a parent view. See
+   https://developer.android.com/reference/android/view/View.html#setImportant
+   ForAutofill(int).
+
+   https://developer.android.com/guide/topics/text/autofill.html
+
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_phone_list.xml:34: Warning: Missing contentDescription attribute on image [ContentDescription]
+            <ImageView
+             ~~~~~~~~~
+
+   Explanation for issues of type "ContentDescription":
+   Non-textual widgets like ImageViews and ImageButtons should use the
+   contentDescription attribute to specify a textual description of the widget
+   such that screen readers and other accessibility tools can adequately
+   describe the user interface.
+
+   Note that elements in application screens that are purely decorative and do
+   not provide any content or enable a user action should not have
+   accessibility content descriptions. In this case, just suppress the lint
+   warning with a tools:ignore="ContentDescription" attribute.
+
+   Note that for text fields, you should not set both the hint and the
+   contentDescription attributes since the hint will never be shown. Just set
+   the hint.
+
+   https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases
+
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_add_phone.xml:42: Warning: Missing accessibility label: provide either a view with an android:labelFor that references this view or provide an android:hint [LabelFor]
+            <EditText
+             ~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_add_phone.xml:64: Warning: Missing accessibility label: provide either a view with an android:labelFor that references this view or provide an android:hint [LabelFor]
+            <EditText
+             ~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_add_phone.xml:86: Warning: Missing accessibility label: provide either a view with an android:labelFor that references this view or provide an android:hint [LabelFor]
+            <EditText
+             ~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_add_phone.xml:108: Warning: Missing accessibility label: provide either a view with an android:labelFor that references this view or provide an android:hint [LabelFor]
+            <EditText
+             ~~~~~~~~
+
+   Explanation for issues of type "LabelFor":
+   Editable text fields should provide an android:hint or, provided your
+   minSdkVersion is at least 17, they may be referenced by a view with a
+   android:labelFor attribute.
+
+   When using android:labelFor, be sure to provide an android:text or an
+   android:contentDescription.
+
+   If your view is labeled but by a label in a different layout which includes
+   this one, just suppress this warning from lint.
+
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\java\org\example\phonemanager\view\PhoneListAdapter.java:77: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        viewHolder.textViewPhoneId.setText("手机编号: " + phone.getPhoneId());
+                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\java\org\example\phonemanager\view\PhoneListAdapter.java:78: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        viewHolder.textViewBrand.setText("品牌: " + (phone.getBrand() != null ? phone.getBrand() : ""));
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\java\org\example\phonemanager\view\PhoneListAdapter.java:79: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        viewHolder.textViewModel.setText("型号: " + (phone.getModel() != null ? phone.getModel() : ""));
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\java\org\example\phonemanager\view\PhoneListAdapter.java:80: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        viewHolder.textViewOwner.setText("拥有者: " + (phone.getOwner() != null ? phone.getOwner() : ""));
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\java\org\example\phonemanager\view\PhoneListAdapter.java:81: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        viewHolder.textViewBorrower.setText("借出人: " + (phone.getBorrower() != null ? phone.getBorrower() : ""));
+                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\java\org\example\phonemanager\view\PhoneListAdapter.java:82: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        viewHolder.textViewReturnPerson.setText("归还人: " + (phone.getReturnPerson() != null ? phone.getReturnPerson() : ""));
+                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\java\org\example\phonemanager\view\PhoneListAdapter.java:83: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        viewHolder.textViewStatus.setText("状态: " + (phone.getStatus() != null ? phone.getStatus() : ""));
+                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "SetTextI18n":
+   When calling TextView#setText
+   * Never call Number#toString() to format numbers; it will not handle
+   fraction separators and locale-specific digits properly. Consider using
+   String#format with proper format specifications (%d or %f) instead.
+   * Do not pass a string literal (e.g. "Hello") to display text. Hardcoded
+   text can not be properly translated to other languages. Consider using
+   Android resource strings instead.
+   * Do not build messages by concatenating text chunks. Such messages can not
+   be properly translated.
+
+   https://developer.android.com/guide/topics/resources/localization.html
+
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_add_phone.xml:23: Warning: Hardcoded string "添加手机信息", should use @string resource [HardcodedText]
+                android:text="添加手机信息"
+                ~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_add_phone.xml:35: Warning: Hardcoded string "手机ID:", should use @string resource [HardcodedText]
+                android:text="手机ID:"
+                ~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_add_phone.xml:57: Warning: Hardcoded string "拥有者:", should use @string resource [HardcodedText]
+                android:text="拥有者:"  
+                ~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_add_phone.xml:79: Warning: Hardcoded string "品牌:", should use @string resource [HardcodedText]
+                android:text="品牌:"
+                ~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_add_phone.xml:101: Warning: Hardcoded string "型号:", should use @string resource [HardcodedText]
+                android:text="型号:"
+                ~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_add_phone.xml:135: Warning: Hardcoded string "取消", should use @string resource [HardcodedText]
+                    android:text="取消"
+                    ~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_add_phone.xml:146: Warning: Hardcoded string "添加", should use @string resource [HardcodedText]
+                    android:text="添加"
+                    ~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_lend.xml:41: Warning: Hardcoded string "手机信息", should use @string resource [HardcodedText]
+                        android:text="手机信息"
+                        ~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_lend.xml:154: Warning: Hardcoded string "借出信息", should use @string resource [HardcodedText]
+                        android:text="借出信息"
+                        ~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_main.xml:74: Warning: Hardcoded string "添加手机", should use @string resource [HardcodedText]
+                    android:text="添加手机"
+                    ~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_main.xml:86: Warning: Hardcoded string "浏览手机", should use @string resource [HardcodedText]
+                    android:text="浏览手机"
+                    ~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_main.xml:99: Warning: Hardcoded string "使用说明：点击相应按钮开始借还操作，系统将引导您完成扫描二维码和信息输入流程。", should use @string resource [HardcodedText]
+            android:text="使用说明：点击相应按钮开始借还操作，系统将引导您完成扫描二维码和信息输入流程。"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_phone_list.xml:20: Warning: Hardcoded string "手机信息列表", should use @string resource [HardcodedText]
+            android:text="手机信息列表"
+            ~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_phone_list.xml:47: Warning: Hardcoded string "搜索手机编号、拥有者、品牌、型号", should use @string resource [HardcodedText]
+                android:hint="搜索手机编号、拥有者、品牌、型号"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_phone_list.xml:58: Warning: Hardcoded string "搜索", should use @string resource [HardcodedText]
+                android:text="搜索"
+                ~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_return.xml:41: Warning: Hardcoded string "手机信息", should use @string resource [HardcodedText]
+                        android:text="手机信息"
+                        ~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_return.xml:195: Warning: Hardcoded string "归还信息", should use @string resource [HardcodedText]
+                        android:text="归还信息"
+                        ~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_phone_list.xml:40: Warning: Consider replacing android:layout_marginRight with android:layout_marginEnd="8dp" to better support right-to-left layouts [RtlHardcoded]
+                android:layout_marginRight="8dp" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Administrator\Desktop\python\phone_manager\app\src\main\res\layout\activity_phone_list.xml:64: Warning: Consider replacing android:layout_marginLeft with android:layout_marginStart="8dp" to better support right-to-left layouts [RtlHardcoded]
+                android:layout_marginLeft="8dp"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "RtlHardcoded":
+   Using Gravity#LEFT and Gravity#RIGHT can lead to problems when a layout is
+   rendered in locales where text flows from right to left. Use Gravity#START
+   and Gravity#END instead. Similarly, in XML gravity and layout_gravity
+   attributes, use start rather than left.
+
+   For XML attributes such as paddingLeft and layout_marginLeft, use
+   paddingStart and layout_marginStart. NOTE: If your minSdkVersion is less
+   than 17, you should add both the older left/right attributes as well as the
+   new start/end attributes. On older platforms, where RTL is not supported
+   and the start/end attributes are unknown and therefore ignored, you need
+   the older left/right attributes. There is a separate lint check which
+   catches that type of error.
+
+   (Note: For Gravity#LEFT and Gravity#START, you can use these constants even
+   when targeting older platforms, because the start bitmask is a superset of
+   the left bitmask. Therefore, you can use gravity="start" rather than
+   gravity="left|start".)
+
+0 errors, 122 warnings
