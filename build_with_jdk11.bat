@@ -11,3 +11,6 @@ echo 开始构建...
 call gradlew.bat clean build
 
 pause
+
+
+1111
