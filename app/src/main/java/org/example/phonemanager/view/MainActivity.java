@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         buttonLend.setOnClickListener(v -> {
             // 跳转到扫描界面，传递操作类型
             Intent intent = new Intent(MainActivity.this, ScanActivity.class);
+            Intent intent = new Intent(MainActivity.this, ScanActivity.class);
             intent.putExtra("operation_type", "lend");
             startActivity(intent);
         });
